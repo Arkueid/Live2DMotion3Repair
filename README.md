@@ -30,7 +30,7 @@
 
 如下是一个motion3.json文件
 
-```
+```json
 {
   "Version": 3,
   "Meta": {
@@ -198,7 +198,8 @@ Curve 中的 Segments 数组解析如下:
 [\[1\]]: #官方的-curve-的说明
 * 一个 Segments 数组最开始的两个数代表一个 point
 * 于是 Segments 数组 [num1, num2, num3, num4, num5, num6, num7, num8, ...] 等价于如下定义
-```  
+
+```python  
 [
     Point(num1, num2), # 开头两个数组成一个单独的point，它们之后是一系列segment
 
@@ -280,7 +281,7 @@ project
 ```
 
 main.py
-```
+```python
 from motion_spec import copy_modify_from_motion
 
 motion_path = "Hiyori/motions/Hiyori_01.motion3.json" #模型文件的路径
@@ -292,7 +293,7 @@ copy_modify_from_motion(motion_path, save_path)
 ```
 ### 2. 批量修改  
 
-```
+```python
 # motion3.json文件路径列表
 
 model_dir = "xuefeng_3"  # 模型文件夹路径
