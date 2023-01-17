@@ -9,7 +9,7 @@
 直接运行官方的SDK for Native加载从网上下载的模型，可能会产生如下错误  
   
 
-![alt 图片](resources\Snipaste_2023-01-17_13-33-09.png)  
+![alt 图片](https://github.com/Arkueid/Live2DMotion3Repair/blob/master/resources/Snipaste_2023-01-17_13-33-09.png)  
 
 导致这个断点，可能原因有：
 * 释放了一个未被分配的指针
@@ -18,7 +18,7 @@
 
 经过多层debug，最终找到可能导致断点的地方：  
 
-![alt 图片](resources\Snipaste_2023-01-17_13-38-45.png)  
+![alt 图片](https://github.com/Arkueid/Live2DMotion3Repair/blob/master/resources/Snipaste_2023-01-17_13-38-45.png)  
 
 把Count参数增大1000，再次运行项目的时候，发现模型可以正常加载
 
@@ -308,7 +308,7 @@ for path in motionPathList:
 
 模型文件夹应该有如下内容  
 
-![alt 图片](resources/Snipaste_2023-01-17_14-22-32.png)
+![alt 图片](https://github.com/Arkueid/Live2DMotion3Repair/blob/master/resources/Snipaste_2023-01-17_14-22-32.png)
 
 ## 参考：  
 * https://www.bilibili.com/read/cv5533799 (评论区)
