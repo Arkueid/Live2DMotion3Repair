@@ -23,6 +23,8 @@ def recount_motion(motion: dict) -> tuple[int, int, int]:
             elif identifier == 1:
                 point_count += 3
                 v += 7
+            else: 
+                raise Exception("unknown identifier: %d" % identifier)
             segment_count += 1
     return curve_count, segment_count, point_count
 
